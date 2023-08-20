@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+	{% include html/head.html %}
+
+	<style>
+		{% include css/reset.css %}
+		{% include css/header.css %}
+		{% include css/main.css %}
+		{% include css/footer.css %}
+		{% include css/responsive.css %}
+	</style>
+
+</head>
+
+<body>
+
+	{{content}}
+
+	{% include html/footer.html %}
+
+	<script type="text/javascript">
+        let navBar = document.getElementsByClassName('header__nav-bar');
+        let mainNav = document.getElementsByClassName('nav__menu');
+        let navBarToggle = document.getElementsByClassName('menu-toggle');
+
+        navBarToggle[0].addEventListener('click', function () {
+        mainNav[0].classList.toggle('active');
+        navBar[0].classList.toggle('menu-open');
+        });
+    </script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  "palette": {
+	    "popup": {
+	      "background": "#efefef",
+	      "text": "#404040"
+	    },
+	    "button": {
+	      "background": "#46877e"
+	    }
+	  },
+	  "type": "opt-in",
+	  "content": {
+	    "message": "Diese Website verwendet Thirt-Party-Cookies, um die Nutzererfahrung zu verbessern.",
+	    "dismiss": "Ablehnen",
+			"deny": "Ablehnen",
+	    "allow": "Zustimmen",
+	    "link": "Mehr erfahren",
+	    "href": "/impressum"
+	  }
+	});
+	</script> -->
+</body>
+
+</html>

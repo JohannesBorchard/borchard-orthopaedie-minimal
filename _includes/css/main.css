@@ -1,0 +1,854 @@
+body {
+	background-color: #fbfbfb;
+	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica",
+		"Tahoma", "Geneva", "Arial", sans-serif;
+	font-stretch: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.mt {
+	margin-top: 20px;
+}
+
+.section {
+	margin-top: 80px;
+	/*max-width: 940px;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section__element {
+	margin-top: 80px;
+}
+
+.section__sub-element {
+	margin-top: 20px;
+}
+
+.last-element {
+	margin-bottom: 200px;
+}
+
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+h1 {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-size: 48px;
+	line-height: 48px;
+	margin-top: 120px;
+}
+
+h2 {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 42px;
+	margin: 0;
+}
+
+h3 {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 36px;
+}
+
+h4 {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
+h5 {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+p,
+a {
+	text-decoration: none;
+	color: #333;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+strong {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+p a,
+.text a {
+	color: #009ee3;
+}
+
+p a:hover {
+	color: #10a9eb;
+}
+
+.centered {
+	text-align: center;
+}
+
+.red {
+	color: #ff0000;
+	border: solid #f5c6cb 1px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #f8d7da;
+}
+
+.text {
+	max-width: 940px;
+}
+
+.text h2 {
+	margin-top: 60px;
+}
+
+.text h4 {
+	margin-top: 60px;
+}
+
+.text h5 {
+	margin-top: 20px;
+}
+
+.text p {
+	margin-top: 20px;
+}
+
+.text--center p {
+	text-align: center;
+	margin: 0 40px 10px 40px;
+}
+
+.text__element-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*.text__element-row p {
+    width: 50%;
+}*/
+
+.text__element-row--center {
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.text__image {
+	display: block;
+	max-height: 100px;
+	/*max-width: 400px;*/
+	margin-top: 40px;
+	width: auto;
+	height: auto;
+	align-self: center;
+}
+
+.text__image-row--flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	flex-wrap: wrap;
+}
+
+.text__image-row--flex img {
+	max-height: 300px;
+	padding-right: 20px;
+	padding-top: 20px;
+	max-width: 100%;
+}
+
+.text__image--float {
+	margin-top: 20px;
+}
+
+/*.text__image--small {
+    max-height: 100px;
+}*/
+
+#bauerfeind-plakat {
+	max-height: 600px;
+}
+
+.text__list {
+	/*width: 240px;*/
+	max-width: 800px;
+	list-style-type: disc;
+	margin-top: 20px;
+	margin-left: 40px;
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+.text__list--heading {
+	margin-top: 10px;
+}
+
+.text__list li {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica",
+		"Tahoma", "Geneva", "Arial", sans-serif;
+	font-weight: 300;
+	margin-top: 5px;
+	color: #444;
+}
+
+.feature-table {
+	margin-top: 10px;
+}
+
+.feature-table td {
+	padding: 10px 20px 0px 0;
+}
+
+.feature-table__category {
+	text-align: right;
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica",
+		"Tahoma", "Geneva", "Arial", sans-serif;
+	font-weight: 600;
+}
+
+.fine-print {
+	font-size: 16px;
+	margin-top: 20px;
+}
+
+.margin-bottom__small  {
+	margin-bottom: 20px;
+	color: green;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+	height: 60px;
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 600;
+	border: none;
+	border-radius: 4px;
+	padding: 0 30px 0 30px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn--standard {
+	background-color: #009ee3;
+}
+
+.btn--standard:hover {
+	background-color: #10a9eb;
+}
+
+.btn--ghost {
+	border: solid 1px #fff;
+	background: 0 0;
+}
+
+.btn--red {
+	background-color: #d79a70;
+}
+
+.btn--red:hover {
+	background-color: #ffcdac;
+}
+
+.btn--read-more {
+	background-color: #d79a70;
+	height: 40px;
+	width: 160px;
+	font-size: 18px;
+	white-space: nowrap;
+	padding: 0;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.btn--back {
+	background-color: #d79a70;
+	height: auto;
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	font-size: 18px;
+	white-space: nowrap;
+	padding: 20px 20px 20px 20px;
+	margin-bottom: 20px;
+
+	text-align: center;
+}
+
+.btn--back:hover,
+.btn--read-more:hover {
+	background-color: #ffcdac;
+}
+
+.btn__icon {
+	height: 20px;
+	margin-right: 10px;
+}
+
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+.overview {
+	margin-top: 40px;
+	border-collapse: separate;
+	border-spacing: 40px;
+}
+
+.overview__service {
+	width: 300px;
+	background-image: url("/assets/check.svg");
+	background-size: 18px;
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	white-space: nowrap;
+	font-size: 22px;
+	font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "TeXGyreHerosRegular", "Helvetica",
+		"Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+.offer {
+	display: block;
+	max-width: 940px;
+	margin-top: 20px;
+}
+
+.offer-mobile {
+	max-width: 300px;
+	margin-top: 20px;
+	display: none;
+}
+
+.brands {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 80%;
+	height: 100%;
+}
+
+.brand-banner {
+	height: 100px;
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.brands__icon {
+	height: 45px;
+	margin-top: 0;
+	align-self: center;
+}
+
+.brands__icon--small {
+	height: 50px;
+}
+
+/* ==========================================================================
+   Orthopädie-Schuhtechnik/Sanitätshaus
+   ========================================================================== */
+
+.service-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	max-width: 990px;
+	/*margin-top: 80px;*/
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+	transition: 0.2s;
+	width: 300px;
+	height: 380px;
+	margin: 10px;
+	background-color: #fff;
+	border-radius: 7px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card--info {
+	width: 600px;
+	padding: 30px;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: none;
+}
+
+.card-link {
+	cursor: pointer;
+}
+
+.card-link:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card__text h4 {
+	text-align: center;
+	margin-top: 40px;
+	height: 50px;
+	color: #333;
+}
+
+.card__text p {
+	margin-left: 30px;
+	margin-right: 20px;
+	color: #444;
+}
+
+.card__list {
+	margin-left: 50px;
+}
+
+.pain td {
+	padding: 0 20px 40px 40px;
+}
+
+.table__list {
+	list-style-type: disc;
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 260px;
+}
+
+.table__list li {
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosRegular", "Helvetica",
+		"Tahoma", "Geneva", "Arial", sans-serif;
+	font-weight: 300;
+	margin-top: 5px;
+	color: #444;
+}
+
+/* ==========================================================================
+   Regionale Versorgung
+   ========================================================================== */
+
+.institution-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.institution-table {
+	margin-top: 40px;
+	width: 940px;
+}
+
+.institution {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.institution__data {
+	line-height: 24px;
+	color: #444;
+	padding: 40px 80px 40px 0;
+}
+
+.institution__data:last-child {
+	padding-right: 0;
+}
+
+.institution__type {
+	font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", "TeXGyreHerosBold", "Helvetica", "Tahoma",
+		"Geneva", "Arial", sans-serif;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+#timeline-mobil {
+	display: none;
+}
+
+#timeline-desktop {
+	display: block;
+}
+
+/* ==========================================================================
+   Slider
+   ========================================================================== */
+
+.slick-slide {
+	margin: 0px 20px;
+}
+
+/*.slick-slide img {
+    width: 100%;
+}*/
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus {
+	outline: none;
+}
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+}
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: "";
+}
+.slick-track:after {
+	clear: both;
+}
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.slick-slide {
+	display: none;
+	float: left;
+	/*height: 100%;*/
+	min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+	float: right;
+}
+.slick-slide img {
+	display: block;
+}
+.slick-slide.slick-loading img {
+	display: none;
+}
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+.slick-initialized .slick-slide {
+	display: block;
+}
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+/* ==========================================================================
+   Mobile version
+   ========================================================================== */
+
+@media only screen and (max-width: 1024px), (min-device-width: 300px) and (max-device-width: 1024px) {
+	main {
+		margin-top: 40px;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4 {
+		text-align: center;
+		margin-left: 40px;
+		margin-right: 40px;
+		word-break: break-word;
+		hyphens: auto;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+	}
+
+	h1 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+
+	.section {
+		margin-top: 80px;
+	}
+
+	.section__element {
+		margin-top: 40px;
+	}
+
+	.text {
+		margin: 0 40px 0 40px;
+		max-width: 300px;
+	}
+
+	.text__element-row {
+		flex-direction: column;
+	}
+
+	.text--center p br {
+		display: none;
+	}
+
+	.institution-table,
+	.institution,
+	.institution__data,
+	thead,
+	tbody,
+	th {
+		display: block;
+		width: 100%;
+	}
+
+	.overview,
+	.overview__service,
+	.overview tr {
+		display: block;
+	}
+
+	.institution {
+		margin: 0 0 1rem 0;
+		padding-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-top: none;
+	}
+
+	.institution__data {
+		line-height: 24px;
+		color: #444;
+		border: none;
+		/*border-bottom: 1px solid #eee;*/
+		text-align: center;
+		padding: 10px 20px 10px 20px !important;
+	}
+	.institution__data:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		white-space: nowrap;
+	}
+
+	.institution__phone,
+	.institution__adress {
+		text-align: center;
+	}
+
+	.institution-container {
+		align-items: center;
+	}
+
+	.institution-container h3 {
+		text-align: center;
+	}
+
+	.pain,
+	.pain td,
+	.pain tr {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pain td {
+		line-height: 24px;
+		color: #444;
+		border: none;
+		/*border-bottom: 1px solid #eee;*/
+		text-align: left;
+
+		padding: 20px 20px 20px 20px;
+	}
+	.pain tr {
+		margin: 0 0 1rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-top: none;
+	}
+
+	.pain td:before {
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		white-space: nowrap;
+	}
+	.table__list {
+		text-align: left;
+	}
+
+	.overview__service {
+		line-height: 24px;
+		font-size: 18px;
+		color: #444;
+		border: none;
+		/*border-bottom: 1px solid #eee;*/
+		text-align: left;
+		padding: 15px 20px 15px 30px;
+	}
+
+	.overview__service tr {
+		margin-bottom: 0;
+	}
+	.overview__service:before {
+		position: absolute;
+		white-space: nowrap;
+	}
+
+	.overview {
+		margin-left: 40px;
+	}
+	.overview > tr {
+		margin: 0 0 1rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-top: none;
+	}
+
+	.offer {
+		display: none;
+		/*max-width: 90%;
+    max-height: 200px;
+    width: auto;*/
+	}
+
+	.offer-mobile {
+		display: block;
+		max-width: 100%;
+	}
+
+	.brands {
+		flex-direction: column;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		flex-wrap: nowrap;
+	}
+
+	.brand-banner {
+		width: 100%;
+		height: auto;
+	}
+
+	.brands__icon {
+		height: 60px;
+		width: auto; /*!important = richtiges verhältnis aber doppelt*/
+		margin-top: 10px;
+		margin-bottom: 10px;
+		align-self: center;
+	}
+
+	.brands__icon--small {
+		height: 50px;
+	}
+
+	.btn {
+		height: 60px;
+		font-size: 18px;
+		min-width: 200px;
+		padding: 0 20px 0 20px;
+	}
+
+	#timeline-mobil {
+		display: block;
+		width: 300px;
+	}
+
+	#timeline-desktop {
+		display: none;
+	}
+
+	.text__image {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (max-width: 375px), (min-device-width: 300px) and (max-device-width: 1024px) {
+	.btn--back {
+		max-width: 200px;
+		white-space: normal;
+	}
+
+	.overview,
+	.overview__service,
+	.overview tr {
+		width: 80%;
+		margin-right: 20px;
+	}
+}
